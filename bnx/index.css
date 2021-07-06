@@ -1,0 +1,638 @@
+body {
+    font-family: 'FuturaHeavyfont', 'FuturaLight', 'Nanum Barun Gothic', "나눔바른고딕", "맑은 고딕", "Malgun Gothic", sans-serif;
+    font-size:15px;
+}
+
+@font-face {
+    font-family: 'FuturaLight';
+    src: url('../font/FuturaLight.eot');
+    src: url(../font/FuturaLight.eot?#iefix) format('embedded-opentype'),
+        url('../font/FuturaLight.woff') format('woff'),
+        url('../font/FuturaLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaHeavyfont';
+    src: url('../font/FuturaHeavyfont.eot');
+    src: url(../font/FuturaHeavyfont.eot?#iefix) format('embedded-opentype'),
+        url('../font/FuturaHeavyfont.woff') format('woff'),
+        url('../font/FuturaHeavyfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nanum Barun Gothic';
+    font-style: normal;
+    font-weight: 200;
+    src: url(../font/NanumBarunGothicUltraLight.eot);
+    src: local('Nanum Barun Gothic UltraLight'),
+        local('NanumBarunGothicUltraLight'),
+        url(../font/NanumBarunGothicUltraLight.eot?#iefix) format('embedded-opentype'),
+        url(../font/NanumBarunGothicUltraLight.woff2) format('woff2'),
+        url(../font/NanumBarunGothicUltraLight.woff) format('woff'),
+        url(../font/NanumBarunGothicUltraLight.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Nanum Barun Gothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../font/NanumBarunGothicLight.eot);
+    src: local('Nanum Barun Gothic Light'),
+        local('NanumBarunGothicLight'),
+        url(../font/NanumBarunGothicLight.eot?#iefix) format('embedded-opentype'),
+        url(../font/NanumBarunGothicLight.woff2) format('woff2'),
+        url(../font/NanumBarunGothicLight.woff) format('woff'),
+        url(../font/NanumBarunGothicLight.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Nanum Barun Gothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/NanumBarunGothic.eot);
+    src: local('Nanum Barun Gothic'),
+        local('NanumBarunGothic'),
+        url(../font/NanumBarunGothic.eot?#iefix) format('embedded-opentype'),
+        url(../font/NanumBarunGothic.woff2) format('woff2'),
+        url(../font/NanumBarunGothic.woff) format('woff'),
+        url(../font/NanumBarunGothic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Nanum Barun Gothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../font/NanumBarunGothicBold.eot);
+    src: local('Nanum Barun Gothic Bold'),
+        local('NanumBarunGothicBold'),
+        url(../font/NanumBarunGothicBold.eot?#iefix) format('embedded-opentype'),
+        url(../font/NanumBarunGothicBold.woff2) format('woff2'),
+        url(../font/NanumBarunGothicBold.woff) format('woff'),
+        url(../font/NanumBarunGothicBold.ttf) format('truetype');
+}
+
+.wrap a {
+    display: block;
+}
+
+.con {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+#header h1 {
+    text-align: center;
+    line-height: 0;
+    padding-top: 26px;
+}
+
+#header .d_nav {
+    height: 15px;
+    margin-top: 30px;
+}
+
+#header .d_nav > ul {
+    overflow: hidden;
+}
+
+#header .d_nav > ul > li {
+    position: relative;
+}
+
+#header .d_nav > ul > li > a:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 30px;
+    background: #333;
+    transform: translateY(-50%);
+}
+
+#header .d_nav > ul > li:last-child > a:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 30px;
+    background: #333;
+    transform: translateY(-50%);
+}
+
+#header .d_nav > ul > li {
+    float: left;
+    text-align: center;
+    width: 14.2857%;
+}
+
+#header .d_nav > ul > li > a {
+    display: block;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+
+#header .d_nav > ul > li > ul {
+    position: relative;
+    display: none;
+    margin-top: 5px;
+    padding: 5px 0;
+    border-top: 1px solid rgb(173, 173, 173);
+    border-bottom: 1px solid rgb(173, 173, 173);
+    background: url(img/bg_gnb.png) 0 0 repeat;
+    z-index: 5;
+}
+
+#header .d_nav > ul > li > ul > li {}
+
+#header .d_nav > ul > li > ul > li a {
+    display: block;
+    padding: 3px 0;
+    font-family: 'FuturaLight';
+    font-size: 0.7rem;
+    color: rgb(133, 133, 133);
+    line-height: 0.7rem;
+    vertical-align: top;
+}
+
+#header .d_nav > ul > li > ul > li a:hover {
+    color: saddlebrown;
+    text-decoration: underline;
+}
+
+.m_menu_btn,
+.m_menu,
+.m_sns_btn,
+.m_sns {
+    display: none;
+}
+
+
+/* 비주얼 슬라이드 */
+.slideWrap {
+    position: relative;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 46.26%;
+}
+
+.slideWrap .slideInner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-1 {
+    position: relative;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+.carousel-1 .item {
+    height: 430px;
+}
+
+.carousel-1 .item {
+    background-size: contain;
+}
+
+.m_slideWrap {
+    display: none;
+}
+
+/* 배너 영역 */
+.banner {
+    margin-left: -15px;
+}
+
+.banner ul {
+    position: relative;
+}
+
+.banner ul li {
+    width: 25%;
+    margin-top: 20px;
+    padding-left: 15px;
+}
+
+.banner ul li.cell:nth-child(3n + 1) {
+    width: 50%;
+
+}
+
+.banner ul li img {
+    display: block;
+    width: 100%;
+}
+
+.banner ul li:nth-child(5),
+.banner ul li:nth-child(6) {
+    position: absolute;
+    bottom: 0;
+}
+
+.banner ul li:nth-child(5) {
+    left: 0;
+}
+
+.banner ul li:nth-child(6) {
+    left: 25%;
+}
+
+/* 푸터 */
+#footerWrap {
+    overflow: hidden;
+    margin: 50px 0 30px 0;
+    padding: 10px 0;
+    border-top: 1px solid rgb(199, 199, 199);
+    border-bottom: 1px solid rgb(199, 199, 199);
+    font-size: 10px;
+    color: rgb(125, 125, 125);
+}
+
+#footerWrap ul {
+    float: left;
+}
+
+#footerWrap ul li {
+    display: inline-block;
+}
+
+#footerWrap ul li:nth-child(5) a {
+    color: rgb(60, 89, 152);
+}
+
+#footerWrap ul li:nth-child(6) a {
+    color: rgb(35, 177, 0);
+}
+
+#footerWrap ul li a {
+    padding-left: 10px;
+}
+
+#footerWrap .copyright {
+    float: right;
+}
+
+#footerWrap .copyright a {
+    display: inline-block;
+}
+
+#footerWrap .copyright p {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#footerWrap .copyright p span {
+    color: #333;
+}
+
+
+
+@media screen and (max-width: 980px) {
+    #header {
+        position: relative;
+        height: 55px;
+        border-bottom: 1px solid rgb(234,234,234);
+    }
+
+    #header h1 {
+        width: 60px;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    #header h1 img {
+        width: 100%;
+    }
+
+    /* 모바일 햄버거 메뉴 */
+    .m_menu_btn {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 25px;
+        height: 15px;
+        padding: 20px 15px;
+    }
+
+    .m_menu_btn a,
+    .m_menu_btn a span {
+        display: inline-block;
+        /*  transition:all .4s;*/
+        box-sizing: border-box;
+    }
+
+    .m_menu_btn a {
+        position: relative;
+        width: 25px;
+        height: 17px;
+    }
+
+    .m_menu_btn a span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #000;
+        border-radius: 4px;
+    }
+
+    .m_menu_btn a > span:nth-of-type(1) {
+        top: 0;
+    }
+
+    .m_menu_btn a > span:nth-of-type(2) {
+        top: 7px;
+    }
+
+    .m_menu_btn a > span:nth-of-type(3) {
+        bottom: 0;
+    }
+
+    /*.m_menu_btn:hover {
+        background: #000;
+    }*/
+
+    /*.m_menu_btn:hover a span {
+        background: #fff;
+    }*/
+
+    .m_menu_btn.on {
+        background: #000;
+    }
+
+    .m_menu_btn.on a span {
+        background: #fff;
+    }
+
+
+    /* 모바일 펼침 메뉴   */
+    .m_menu,
+    .m_sns_bg {
+        display: none;
+        position: absolute;
+        top: 55px;
+        width: 100%;
+        height: 10000%;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .m_menu {
+        left: 0;
+        z-index: 15;
+    }
+
+    .m_menu > ul {
+        width: 60%;
+    }
+
+    .m_menu > ul > li {
+        border-top: 1px solid #ccc;
+        position: relative;
+    }
+
+    .m_menu > ul > li:after {
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        font-family: "Font Awesome 5 Free" !important;
+        content: "\f105";
+        font-size: 1rem;
+        font-weight: 900;
+
+    }
+
+    .m_menu > ul > li:hover:after {
+        content: "\f107";
+
+    }
+
+    .m_menu ul li a {
+        display: block;
+        padding: 15px 0 15px 15px;
+        background: #fff;
+        font-size: 0.85rem;
+    }
+
+    .m_menu > ul > li > ul {
+        display: none;
+    }
+
+    .m_menu > ul > li > ul > li {
+        border-top: 1px solid #d6d6d6;
+    }
+
+    .m_menu > ul > li > ul > li a {
+        background: #e8e8e8;
+    }
+
+    #content {
+        margin-top: 0;
+    }
+
+    .m_sns_btn {
+        display: block;
+        position: absolute;
+        right: 12px;
+        top: 12px;
+    }
+
+    .m_sns {
+        position: absolute;
+        top: 55px;
+        right: 0;
+        width: 100%;
+        z-index: 15;
+    }
+
+    .m_sns ul {
+        width: 100px;
+        right: 0;
+        top: 0;
+        position: absolute;
+    }
+
+    .m_sns ul li {
+        background: #fff;
+        border-top: 1px solid #ccc;
+    }
+
+    .m_sns ul li a {
+        padding: 15px 0;
+        text-align: center;
+        font-size: 0.85rem;
+    }
+
+    .m_sns_bg {
+        z-index: 8;
+    }
+
+    .d_nav {
+        display: none;
+    }
+
+    .carousel-1 {
+
+        margin-top: 0;
+
+    }
+
+    #footerWrap {
+        text-align: center;
+        line-height: 17px;
+    }
+
+    #footerWrap ul {
+        float: none;
+    }
+
+    #footerWrap ul li {
+        display: inline-block;
+    }
+
+    #footerWrap ul li:nth-child(5) {
+        display: none;
+    }
+
+    #footerWrap ul li:nth-child(6) {
+        display: none;
+    }
+
+    #footerWrap ul li a {
+        display: block;
+        padding-left: 10px;
+    }
+
+    #footerWrap .copyright {
+        float: none;
+    }
+
+    #footerWrap .copyright p {
+        display: block;
+        margin-left: 0;
+    }
+
+    #footerWrap .copyright p span {
+        color: #333;
+    }
+
+}
+
+
+@media screen and (max-width: 871px) {
+
+    .banner ul li {
+        width: 33.3333%;
+        margin-top: 20px;
+        padding-left: 15px;
+    }
+
+    .banner ul li.cell:nth-child(3n + 1) {
+        width: 66.6666%;
+
+    }
+
+    .banner ul li img {
+        display: block;
+        width: 100%;
+    }
+
+    .banner ul li:nth-child(5),
+    .banner ul li:nth-child(6) {
+        position: absolute;
+        left: 66.6666%;
+    }
+
+    .banner ul li:nth-child(5) {
+        bottom: 24.5666%;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .slideWrap {
+        display: none;
+    }
+
+    .m_slideWrap {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        padding-bottom: 73.26%;
+    }
+
+    .m_slideWrap .m_slideInner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .carousel-2 {
+        position: relative;
+        z-index: 1;
+    }
+
+    .carousel-2 .item {
+        height: 0;
+        padding-bottom: 66.333333%;
+    }
+
+    .carousel-2 .item {
+        background-size: contain;
+    }
+
+}
+
+@media screen and (max-width: 621px) {
+
+    .banner ul li {
+        width: 50%;
+        margin-top: 20px;
+        padding-left: 15px;
+    }
+
+    .banner ul li.cell:nth-child(3n + 1) {
+        width: 100%;
+    }
+
+    .banner ul li img {
+        display: block;
+        width: 100%;
+    }
+
+    .banner ul li:nth-child(5),
+    .banner ul li:nth-child(6) {
+        position: static;
+    }
+
+}
+
+
+
+.hide {
+    position: absolute;
+    left: -10000px;
+    top: -10000px;
+    line-height: 0;
+    font-size: 0;
+    text-indent: -9999px;
+}
+
+.fa {
+    font: FontAwesome !important;
+}

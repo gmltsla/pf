@@ -1,0 +1,170 @@
+body {
+    font-family: "NanumBarunGothic", "나눔바른고딕", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+    min-width: 1147px;
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    src: url('font/NanumBarunGothic.eot');
+    src: url('font/NanumBarunGothic.eot') format('embedded-opentype'),
+        url('font/NanumBarunGothic.woff') format('woff');
+}
+
+
+/* 탑바 */
+.top-bar-wrap {
+    width: 100%;
+    height: 72px;
+    background: #FFF url(img/bg_gnb.gif) repeat-x;
+}
+
+.top-bar-wrap.active {
+    height: 412px;
+}
+
+/* 탑바 - 로고 */
+.top-bar .logo {}
+
+/* 탑바 - 메뉴1 */
+.top-bar .menu-1 {}
+
+.top-bar .menu-1 > ul > li > a {
+    display: block;
+    padding: 23px;
+    font-size: 1.2rem;
+}
+
+.top-bar .menu-1 > ul > li:hover > a {
+    color: red;
+}
+
+.top-bar .menu-1 > ul > li:hover > div {
+    z-index: 4;
+}
+
+.top-bar .menu-1 > ul > li:hover > div::after {
+    transition: opacity .5s;
+    opacity: 1;
+}
+
+.top-bar .menu-1 > ul > li:hover > div > div {
+    height: 280px;
+}
+
+/* 탑바 - 메뉴1 상세*/
+
+.menu-detail-wrap {
+    /*display:none;*/
+    width: 100%;
+    position: absolute;
+    top: 72px;
+    left: 0;
+}
+
+.menu-detail-wrap::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10000px;
+    right: -10000px;
+    bottom: 0;
+    /*    background-color:red;*/
+    z-index: 0;
+}
+
+.menu-detail-wrap::after {
+    content: "";
+    position: absolute;
+    left: -10000px;
+    right: -10000px;
+    height: 1px;
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    opacity: 0;
+    transition: opacity 0s;
+    /*box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);*/
+}
+
+.menu-detail-wrap > div {
+    z-index: 1;
+    position: relative;
+    background-color: white;
+    height: 0;
+    overflow-y: hidden;
+    transition: height 1s;
+}
+
+/*@media ( min-width:1201px ) {
+    html, body {
+        overflow-x: hidden;
+    }
+}*/
+
+.menu-detail {
+    /*top: 75px;*/
+    /*margin-top: 30px;*/
+}
+
+.menu-1 > .row li:nth-child(1) .menu-tit {
+    background: url(img/bg_gnb_company.png) no-repeat 220px 90px;
+}
+
+.menu-1 > .row li:nth-child(2) .menu-tit {
+    background: url(img/bg_gnb_product.png) no-repeat 220px 90px;
+}
+
+.menu-1 > .row li:nth-child(3) .menu-tit {
+    background: url(img/bg_gnb_mediacenter.png) no-repeat 220px 70px;
+}
+
+.menu-1 > .row li:nth-child(4) .menu-tit {
+    background: url(img/bg_gnb_csr.png) no-repeat 220px 68px;
+}
+
+.menu-1 > .row li:nth-child(5) .menu-tit {
+    background: url(img/bg_gnb_cs.png) no-repeat 220px 55px;
+}
+
+
+.menu-tit {
+    width: 460px;
+    height: 253px;
+    border-right: 2px solid #e3e3e3;
+}
+
+.menu-tit p {
+    text-align: left;
+    font-size: 40px;
+    line-height: 1.3em;
+    vertical-align: top;
+}
+
+.menu-list {
+    width: 395px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.menu-list li {
+    text-align: left;
+    margin-bottom: 15px;
+    width: 197px;
+}
+
+/* 탑바 - 메뉴2 */
+
+.top-bar .menu-2 > ul > li > a {
+    display: block;
+    padding: 10px 15px;
+    font-size: 0.8rem;
+}
+
+.top-bar .menu-2 {
+    padding-left: 50px;
+    border-left: 1px solid #dfdfdf;
+}
+
+/* 비주얼 컨텐츠 */
+
+#content-wrap {width:100%;}
+.content {width:1147px;margin:0 auto;}

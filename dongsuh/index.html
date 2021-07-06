@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>dongsuh</title>
+    <!-- 모바일에서 화면배율을 디바이스 크기 기준으로 설정 -->
+    <!-- 이게 안되면 pc에서의 100px과 모바일에서의 100px이 디바이스 성능에 따라 달라집니다. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- 폰트어썸 불러오기 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- owl 캐러셀 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+
+    <script src="jssor.slider-27.5.0.min.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="../lib.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" type="text/javascript"></script>
+
+    <script>
+        function search_click() {
+            alert("검색어를 입력해주세요.");
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <div class="menu-bar con-min-width">
+        <div class="con relative  text-align-center line-height-0-ch-only">
+            <a href="index.html" class="logo img-box absolute-left absolute-middle">
+                <img src="img/logo.png" alt="동서식품로고">
+            </a>
+            <nav class="menu-1 inline-block">
+                <ul class="row">
+                    <li class="cell">
+                        <a href="company.html">회사소개</a>
+                        <div class="absolute">
+                            <div class="relative">
+                                <div class="menu-tit cell">
+                                    <p>Dong Suh<br>Food</p>
+                                </div>
+                                <div class="menu-list cell">
+                                    <ul>
+                                        <li><a href="#a">동서식품</a></li>
+                                        <li><a href="#a">식품안전센터</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu-img cell"><a href="#a"><img src="img/img_gnb_event.jpg" alt="포스트그래놀라이벤트바로가기" /></a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cell">
+                        <a href="#a">제품안내</a>
+                        <div class="absolute">
+                            <div class="relative">
+                                <div class="menu-tit cell">
+                                    <p>Products</p>
+                                </div>
+                                <div class="menu-list cell">
+                                    <ul>
+                                        <li><a href="#a">브랜드</a></li>
+                                        <li><a href="#a">제품소개</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu-img cell"><a href="#a"><img src="img/img_gnb_event.jpg" alt="포스트그래놀라이벤트바로가기" /></a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cell">
+                        <a href="#a">홍보센터</a>
+                        <div class="absolute">
+                            <div class="relative">
+                                <div class="menu-tit cell">
+                                    <p>Media<br>Center</p>
+                                </div>
+                                <div class="menu-list cell">
+                                    <ul>
+                                        <li class="cell"><a href="#a">뉴스</a></li>
+                                        <li class="cell"><a href="#a">이벤트</a></li>
+                                        <li class="cell"><a href="#a">동서식품 홍보영상</a></li>
+                                        <li class="cell"><a href="#a">TV CF</a></li>
+                                        <li class="cell"><a href="#a">웹진 삶의 향기</a></li>
+                                        <li class="cell"><a href="#a">커피 클래스</a></li>
+                                        <li class="cell"><a href="#a">커피 테이스트</a></li>
+                                        <li class="cell"><a href="#a">소셜미디어</a></li>
+                                </div>
+                                <div class="menu-img cell"><a href="#a"><img src="img/img_gnb_event.jpg" alt="포스트그래놀라이벤트바로가기" /></a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cell">
+                        <a href="#a">사회공헌</a>
+                        <div class="absolute">
+                            <div class="relative">
+                                <div class="menu-tit cell">
+                                    <p>CSR</p>
+                                </div>
+                                <div class="menu-list cell">
+                                    <ul>
+                                        <li class="cell"><a href="#a">삶의향기 동서문학상</a></li>
+                                        <li class="cell"><a href="#a">맥심커피배 입신최강전</a></li>
+                                        <li class="cell"><a href="#a">동서커피클래식</a></li>
+                                        <li class="cell"><a href="#a">동서식품 장학회</a></li>
+                                        <li class="cell"><a href="#a">맥심사랑의 향기</a></li>
+                                        <li class="cell"><a href="#a">동서식품 꿈의 도서관</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu-img cell"><a href="#a"><img src="img/img_gnb_event.jpg" alt="포스트그래놀라이벤트바로가기" /></a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cell">
+                        <a href="#a">고객의소리</a>
+                        <div class="absolute">
+                            <div class="relative">
+                                <div class="menu-tit cell">
+                                    <p>Customer<br>Support</p>
+                                </div>
+                                <div class="menu-list cell">
+                                    <ul>
+                                        <li><a href="#a">FAQ</a></li>
+                                        <li><a href="#a">고객문의</a></li>
+                                        <li><a href="#a">제품 아이디어</a></li>
+                                        <li><a href="#a">제품 불편사항</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu-img cell"><a href="#a"><img src="img/img_gnb_event.jpg" alt="포스트그래놀라이벤트바로가기" /></a></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="sub-menu-overlay"></div>
+            </nav>
+            <nav class="menu-2 absolute-right absolute-middle">
+                <ul class="row">
+                    <li class="cell"><a href="#a">회원가입</a></li>
+                    <li class="cell"><a href="#a">로그인</a></li>
+                    <li class="cell"><a href="#a"><img src="http://www.dongsuh.co.kr/2017/images/common/ico_search.gif" alt="검색" /></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="search-top relative">
+        <div class="search-wrap" id="searchWrap">
+            <div class="search row">
+                <form action="">
+                    <input type="text" placeholder="검색어를 입력해주세요">
+                    <a href="#a" class="cell-right" onclick="search_click();"><img src="img/ico_search.png" alt="검색" /></a>
+                </form>
+                <a class="btn_close" href="#a"><img src="img/btn_popup_close_big.jpg" alt="닫기"></a>
+            </div>
+        </div>
+        <div class="sub-menu-overlay"></div>
+    </div>
+    <div class="box-1">
+        <div class="con">
+            <div class="row">
+                <div class="cell">
+                    <div class="carousel-1">
+                        <ul class="owl-carousel owl-theme">
+                            <li class="item" style="background-image:url(http://www.dongsuh.co.kr/2017/images/main/img_banner1_1.jpg);">
+                                <div>
+                                    세상의 모든<br>순간이 더욱<br>행복해지도록
+                                </div>
+                            </li>
+                            <li class="item" style="background-image:url(http://www.dongsuh.co.kr/2017/images/main/img_banner1_2.jpg);">
+                                <div>
+                                    삶의<br>
+                                    향기가<br>
+                                    문학이<br>
+                                    됩니다.
+                                </div>
+                            </li>
+                            <li class="item" style="background-image:url(http://www.dongsuh.co.kr/2017/images/main/img_banner1_6.jpg);">
+                                <div>
+                                    동서식품,<br>'맥심6차<br>리스테이지' 시행
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="row">
+                        <div class="cell box">
+                            <div class="carousel-2">
+                                <h1>HOT NEWS</h1>
+                                <ul class="owl-carousel owl-theme">
+                                    <li class="item text">
+                                        <p>동서식품, 프리미엄 홍차 ‘타라 클래식’ 신제품 3종 출시</p><span>2018.10.23</span>
+                                    </li>
+                                    <li class="item text">
+                                        <p>동서식품, 여의도샛강생태공원서 환경정화 봉사활동 전개</p><span>2018.10.23</span>
+                                    </li>
+                                    <li class="item text">
+                                        <p>‘맥심 티오피’ 브랜드 캠페인 '티오피 투고 크루' 시즌2 성황리 마무리</p><span>2018.10.15</span>
+                                    </li>
+                                    <li class="item text">
+                                        <p>동서식품, 맥심 모카골드 신규 TV광고 공개</p>
+                                        <span>2018.10.12</span>
+                                    </li>
+                                    <li class="item text">
+                                        <p>동서식품, ‘제14회 삶의향기 동서문학상’ 공모 마감</p>
+                                        <span>2018.10.10</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="carousel-3 text-only relative">
+                                <h1 class="absolute">FR FILM</h1>
+                                <ul class="owl-carousel owl-theme">
+                                    <li class="item video" style="background-image:url(img/img_prfilm.jpg);">
+                                        <div class="hover-text relative hvr-radial-out">
+                                            <p>동서식품 홍보영상</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="img-box absolute"><img src="img/icon_film.png" alt="동영상재생"></div>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="carousel-2 text-only relative">
+                                <h1 class="absolute">NEW PRODUCT</h1>
+                                <ul class="owl-carousel owl-theme">
+                                    <li class="item img" style="background-image:url(img/product1.png);">
+                                        <div class="hover-text relative hvr-radial-out">
+                                            <p>골든 그래놀라 아몬드 빈</p>
+                                        </div>
+                                    </li>
+                                    <li class="item img" style="background-image:url(img/product2.png);">
+                                        <div class="hover-text relative hvr-radial-out">
+                                            <p>포스트 골든그래놀라 밀크바</p>
+                                        </div>
+                                    </li>
+                                    <li class="item img" style="background-image:url(img/product3.png);">
+                                        <div class="hover-text relative hvr-radial-out">
+                                            <p>포스트 콘푸라이트 밀크바</p>
+                                        </div>
+                                    </li>
+                                    <li class="item img" style="background-image:url(img/product4.png);">
+                                        <div class="hover-text relative hvr-radial-out">
+                                            <p>포스트 콘푸라이트 베리요거트바</p>
+                                        </div>
+                                    </li>
+                                    <li class="item img" style="background-image:url(img/product5.png);">
+                                        <div class="hover-text relative hvr-radial-out">
+                                            <p>스타벅스 파이크플레이스로스트 스위트블랙커피</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="carousel-2 text-only relative">
+                                <h1 class="absolute">사회공헌</h1>
+                                <ul class="owl-carousel owl-theme">
+                                    <li class="item img" style="background-image:url(img/img_csr1.jpg);">
+                                        <div class="hover-text relative hvr-radial-out">
+                                            <p>삶의 향기 동서문학상</p>
+                                        </div>
+                                    </li>
+                                    <li class="item img" style="background-image:url(img/img_csr2.jpg);">
+                                        <div class="hover-text relative hvr-radial-out">
+                                            <p>맥심커피배 입신최강전</p>
+                                        </div>
+                                    </li>
+                                    <li class="item img" style="background-image:url(img/img_csr3.jpg);">
+                                        <div class="hover-text relative hvr-radial-out">
+                                            <p>동서 커피클래식</p>
+                                        </div>
+                                    </li>
+                                    <li class="item img" style="background-image:url(img/img_csr4.jpg);">
+                                        <div class="hover-text relative hvr-radial-out">
+                                            <p>동서식품 장학회</p>
+                                        </div>
+                                    </li>
+                                    <li class="item img" style="background-image:url(img/img_csr5.jpg);">
+                                        <div class="hover-text relative hvr-radial-out">
+                                            <p>맥심 사랑의 향기</p>
+                                        </div>
+                                    </li>
+                                    <li class="item img" style="background-image:url(img/img_csr6.jpg);">
+                                        <div class="hover-text relative hvr-radial-out">
+                                            <p>스타벅스 꿈의 도서관</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row second">
+                <div class="cell relative">
+                    <a href="#a">
+                        <p class="tit absolute">
+                            Dongsuh<br>History
+                            <span>식품문화를 꽃피워온<br>동서식품의 지난 발자취</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="cell">
+                    <div class="cell relative">
+                        <a herf="#a">
+                            <p class="tit absolute"><img src="img/txt_maxim_flant.png" alt="맥심 브랜드 플래그쉽 스토어 그랜드 오픈"></p>
+                        </a>
+                    </div>
+                    <div class="cell">
+                        <div class="carousel-4 text-only relative">
+                            <h1 class="absolute">TV CF</h1>
+                            <ul class="owl-carousel owl-theme">
+                                <li class="item video" style="background-image:url(img/img_tvcf_1.jpg);">
+                                    <div class="hover-text relative hvr-radial-out">
+                                        <p>오레오</p>
+                                    </div>
+                                </li>
+                                <li class="item video" style="background-image:url(img/img_tvcf_2.jpg);">
+                                    <div class="hover-text relative hvr-radial-out">
+                                        <p>오레오</p>
+                                    </div>
+                                </li>
+                                <li class="item video" style="background-image:url(img/img_tvcf_3.jpg);">
+                                    <div class="hover-text relative hvr-radial-out">
+                                        <p>포스트 그래놀라</p>
+                                    </div>
+                                </li>
+                                <li class="item video" style="background-image:url(img/img_tvcf_4.jpg);">
+                                    <div class="hover-text relative hvr-radial-out">
+                                        <p>맥심 모카골드</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="img-box absolute"><img src="img/icon_film.png" alt="동영상재생"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="cell">
+                        <div class="carousel-4 text-only relative cf">
+                            <h1 class="absolute">WEBZINE</h1>
+                            <ul class="owl-carousel owl-theme">
+                                <li class="item video" style="background-image:url(img/img_webzine1.jpg);">
+                                    <div class="hover-text relative hvr-radial-out">
+                                        <p><span>[향기로운 기억]</span> 오줌싸개와 키</p>
+                                    </div>
+                                </li>
+                                <li class="item video" style="background-image:url(img/img_webzine2.jpg);">
+                                    <div class="hover-text relative hvr-radial-out">
+                                        <p><span>[행복 레시피]</span> 퐁당쇼콜라 &nbsp;amp; 티커스터드 크림토스트</p>
+                                    </div>
+                                </li>
+                                <li class="item video" style="background-image:url(img/img_webzine3.jpg);">
+                                    <div class="hover-text relative hvr-radial-out">
+                                        <p><span>[한국의 재발견]</span> 비무장지대 지뢰지대에서 찾아낸 고려불상</p>
+                                    </div>
+                                </li>
+                                <li class="item video" style="background-image:url(img/img_webzine4.jpg);">
+                                    <div class="hover-text relative hvr-radial-out">
+                                        <p><span>[차 한 잔의 향기]</span> 거리의 정신과 의사 임재영. 당신의 마음을 충전해드립니다</p>
+                                    </div>
+                                </li>
+                                <li class="item video" style="background-image:url(img/img_webzine5.jpg);">
+                                    <div class="hover-text relative hvr-radial-out">
+                                        <p><span>[일상의 향기]</span> 행복의 온기를 높이는 '나눔의 순간'</p>
+                                    </div>
+                                </li>
+                                <li class="item video" style="background-image:url(img/img_webzine6.jpg);">
+                                    <div class="hover-text relative hvr-radial-out">
+                                        <p><span>[음식만담]</span> 한국.중국.일본은 왜 토란을 추석 명절에 먹었을까?</p>
+                                    </div>
+                                </li>
+                                <li class="item video" style="background-image:url(img/img_webzine7.jpg);">
+                                    <div class="hover-text relative hvr-radial-out">
+                                        <p><span>[음식만담]</span> 한국.중국.일본은 왜 토란을 추석 명절에 먹었을까?</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cell relative">
+                        <a href="#a">
+                            <p class="tit absolute">Food <br>Safety
+                                <span>안전한 식품이야기<br>식품안전센터</span></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box-2 con-min-width relative">
+        <nav class="menu-1 text-align-center line-height-0-ch-only absolute">
+            <div class="inline-block relative">
+                <div class="menu-1-item-bottom"></div>
+                <ul class="row">
+                    <li class="cell"><a href="#a">맥심</a></li>
+                    <li class="cell"><a href="#a">맥스웰하우스</a></li>
+                    <li class="cell"><a href="#a">프리마</a></li>
+                    <li class="cell"><a href="#a">타라</a></li>
+                    <li class="cell"><a href="#a">포스트</a></li>
+                    <li class="cell"><a href="#a">미떼</a></li>
+                    <li class="cell"><a href="#a">티오피</a></li>
+                    <li class="cell"><a href="#a">치즈</a></li>
+                    <li class="cell"><a href="#a">벌꿀</a></li>
+                    <li class="cell"><a href="#a">스타벅스</a></li>
+                    <li class="cell"><a href="#a">오레오</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="body relative">
+            <ul>
+                <li>
+                    <div style="background-image:url(img/bg_prd_maxim.jpg);"></div>
+                    <div class="text-align-center">
+                        <p><img src="img/img_maxim.png" alt="MAXIM" /><br>향기 좋은 커피, 맥심</p>
+
+                        <ul class="row inline-block">
+                            <li class="cell"><a href="#a"><img src="img/img_maxim1.png" alt="맥심 모카골드 마일드 커피믹스" />맥심 모카골드 마일드 커피믹스</a></li>
+                            <li class="cell"><a href="#a"><img src="img/img_maxim2.png" alt="맥심 화이트골드 커피믹스" />맥심 화이트골드 커피믹스</a></li>
+                            <li class="cell"><a href="#a"><img src="img/img_maxim3.png" alt="맥심 오리지날 커피믹스" />맥심 오리지날 커피믹스</a></li>
+                            <li class="cell"><a href="#a"><img src="img/img_maxim4.png" alt="맥심 아라비카 100 커피믹스" />맥심 아라비카 100 커피믹스</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div style="background-image:url(img/bg_prd_maxwell.jpg);"></div>
+                    <div class="text-align-center">
+                        <p><img src="img/img_maxwell.png" alt="MAXIM" /><br>함께하는 즐거움</p>
+                        <ul class="row inline-block">
+                            <li class="cell"><a href="#a"><img src="img/img_maxwell1.png" alt="맥스웰하우스 싱글카페" />맥스웰하우스 싱글카페</a></li>
+                            <li class="cell"><a href="#a"><img src="img/img_maxwell2.png" alt="맥스웰하우스 콜롬비아나 스위트아메리카노" />맥스웰하우스 콜롬비아나 스위트아메리카노</a></li>
+                            <li class="cell"><a href="#a"><img src="img/img_maxwell3.png" alt="맥스웰하우스 콜롬비아나 카페라떼" />맥스웰하우스 콜롬비아나 카페라떼</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div style="background-image:url(img/bg_prd_frima.jpg);"></div>
+                    <div class="text-align-center">
+                        <p><img src="img/img_frima.png" alt="PRIMA" /><br>프리마는 아내사랑입니다</p>
+                        <ul class="row inline-block">
+                            <li class="cell"><a href="#a"><img src="img/img_frima1.png" alt="프리마" />프리마</a></li>
+                            <li class="cell"><a href="#a"><img src="img/img_frima2.png" alt="프리마 웰빙 1/2라이트" />프리마 웰빙 1/2라이트</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div style="background-image:url(img/bg_prd_tarra.jpg);"></div>
+                    <div class="text-align-center">
+                        <p><img src="img/img_tarra.png" alt="TARRA" /><br>홍차 보다 긴 여운</p>
+                        <ul class="row inline-block">
+                            <li class="cell"><a href="#a"><img src="img/img_tarra1.png" alt="타라 퍼스트 데이트" />타라 퍼스트 데이트</a></li>
+                            <li class="cell"><a href="#a"><img src="img/img_tarra2.png" alt="타라 퍼스트 데이트" />타라 퍼스트 데이트</a></li>
+                            <li class="cell"><a href="#a"><img src="img/img_tarra3.png" alt="타라 클래식 잉글리시 브랙퍼스트" />타라 클래식 잉글리시 브랙퍼스트</a></li>
+                            <li class="cell"><a href="#a"><img src="img/img_tarra4.png" alt="타라 클래식 얼그레이" />타라 클래식 얼그레이</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div style="background-image:url(img/bg_prd_post.jpg);"></div>
+                    <div class="text-align-center">
+                        <p><img src="img/img_post.png" alt="POST" /><br>홍차 보다 긴 여운좋은 아침! 좋은 생각! 포스트</p>
+                        <ul class="row inline-block">
+                            <li class="cell"><a href="#a"><img src="img/img_post1.png" alt="콘푸라이트" />콘푸라이트</a></li>
+                            <li class="cell"><a href="#a"><img src="img/img_post2.png" alt="오곡 코코볼" />오곡 코코볼</a></li>
+                            <li class="cell"><a href="#a"><img src="img/img_post3.png" alt="고소한 아몬드 후레이크" />고소한 아몬드 후레이크</a></li>
+                            <li class="cell"><a href="#a"><img src="img/img_post4.png" alt="그래놀라 크랜베리 아몬드" />그래놀라 크랜베리 아몬드</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div style="background-image:url(img/bg_prd_mitte.jpg);"></div>
+                    <div class="text-align-center">
+                        <p><img src="img/img_mitte.png" alt="미떼" /><br>찬바람 불 때, 핫초코</p>
+                        <ul class="row inline-block">
+                            <li class="cell"><a href="#a"><img src="img/img_mitte1.png" alt="핫초코 미떼 오리지날" />핫초코 미떼 오리지날</a></li>
+                            <li class="cell"><a href="#a"><img src="img/img_mitte2.png" alt="핫초코 미떼 마일드" />핫초코 미떼 마일드</a></li>
+                            <li class="cell"><a href="#a"><img src="img/img_mitte3.png" alt="핫초코 미떼 모카" />핫초코 미떼 모카</a></li>
+                            <li class="cell"><a href="#a"><img src="img/img_mitte4.png" alt="핫초코 미떼 티라미수" />핫초코 미떼 티라미수</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <div style="background-image:url(img/bg_prd_top.jpg);"></div>
+                    <div class="text-align-center">
+                        <p><img src="img/img_top.png" alt="티오피" /><br>리얼 에스프레소</p>
+                        <ul class="row inline-block">
+                            <li class="cell"><a href="#a"><img src="img/img_top1.png" alt="맥심 티오피 스위트 아메리카노" />맥심 티오피 스위트 아메리카노</a></li>
+                            <li class="cell"><a href="#a"><img src="img/img_top2.png" alt="맥심 티오피 마스터 라떼" />핫초코 미떼 마일드</a></li>
+                            <li class="cell"><a href="#a"><img src="img/img_top3.png" alt="맥심 티오피 더블랙" />맥심 티오피 더블랙</a></li>
+                            <li class="cell"><a href="#a"><img src="img/img_top4.png" alt="맥심 티오피 콜드브루 아메리카노" />맥심 티오피 콜드브루 아메리카노</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div style="background-image:url(img/bg_prd_philadelphia.jpg);"></div>
+                    <div class="text-align-center">
+                        <p><img src="img/img_philla.png" alt="필라델피아" /><br>쉽고 맛있게</p>
+                        <ul class="row inline-block">
+                            <li class="cell"><a href="#a"><img src="img/img_cheese1.png" alt="필라델피아 크림치즈 200g 4종" />필라델피아 크림치즈 200g 4종</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div style="background-image:url(img/bg_prd_honey.jpg);"></div>
+                    <div class="text-align-center">
+                        <p><img src="img/img_honey.png" alt="동서벌꿀" /><br>전문가가 인정한</p>
+                        <ul class="row inline-block">
+                            <li class="cell"><a href="#a"><img src="img/img_honey1.png" alt="동서 벌꿀 아카시아꿀" />동서 벌꿀 아카시아꿀</a></li>
+                            <li class="cell"><a href="#a"><img src="img/img_honey2.png" alt="동서 벌꿀 다화꿀" />동서 벌꿀 다화꿀</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div style="background-image:url(img/bg_prd_starbucks.jpg);"></div>
+                    <div class="text-align-center">
+                        <p><img src="img/img_starbucks.png" alt="스타벅스" /><br>언제 어디서나 스타벅스 RTD</p>
+                        <ul class="row inline-block">
+                            <li class="cell"><a href="#a"><img src="img/img_starbucks1.png" alt="스타벅스 프라푸치노 모카" />스타벅스 프라푸치노 모카</a></li>
+                            <li class="cell"><a href="#a"><img src="img/img_starbucks2.png" alt="스타벅스 더블샷 아메리카노" />스타벅스 더블샷 아메리카노</a></li>
+                            <li class="cell"><a href="#a"><img src="img/img_starbucks3.png" alt="스타벅스 더블샷 에스프레소 &nbsp; 크림 NB" />스타벅스 더블샷 에스프레소 &nbsp; 크림 NB</a></li>
+                            <li class="cell"><a href="#a"><img src="img/img_starbucks4.png" alt="스타벅스 디스커버리즈 카페 라떼" />스타벅스 디스커버리즈 카페 라떼</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div style="background-image:url(img/bg_prd_oreo.jpg);"></div>
+                    <div class="text-align-center">
+                        <p><img src="img/img_oreo.png" alt="오레오" /><br>전세계인들에게 가장 사랑받는 쿠키</p>
+                        <ul class="row inline-block">
+                            <li class="cell"><a href="#a"><img src="img/img_oreo1.png" alt="오레오 화이트크림" />오레오 화이트크림</a></li>
+                            <li class="cell"><a href="#a"><img src="img/img_oreo2.png" alt="오레오 초콜릿크림" />오레오 초콜릿크림</a></li>
+                            <li class="cell"><a href="#a"><img src="img/img_oreo3.png" alt="골든 오레오" />골든 오레오</a></li>
+                            <li class="cell"><a href="#a"><img src="img/img_oreo4.png" alt="오레오 웨하스 스틱 초코" />오레오 웨하스 스틱 초코</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-wrap">
+
+        <div>
+            <div class="row">
+                <ul class="cell">
+                    <li><a href="#a">개인정보취급방침</a></li>
+                    <li><a href="#a">이용약관</a></li>
+                    <li><a href="#a">영상정보처리기기운영관리방침</a></li>
+                </ul>
+                <div class="cell-right">
+                    <div class="select-wrap">
+                        <select name="brand-site" id="brand-site" onchange="if(this.value) window.open(this.value);">
+                            <option selected="selected" value="">브랜드 사이트</option>
+                            <option value="http://www.mymaxim.co.kr/">맥심</option>
+                            <option value="http://www.maximmochagold.co.kr/">모카골드</option>
+                            <option value="http://www.maximkanu.co.kr/kanu/">카누</option>
+                            <option value="http://www.maximwhitegold.co.kr/">화이트골드</option>
+                            <option value="http://www.postopia.co.kr/">포스트</option>
+                        </select>
+                    </div>
+                    <div class="select-wrap">
+                        <select name="family-site" id="family-site" onchange="if(this.value) window.open(this.value);">
+                            <option selected="selected" value="">패밀리 사이트</option>
+                            <option value="http://safe.dongsuh.co.kr/">식품안전센터</option>
+                            <option value="http://bookclub.dongsuh.co.kr/">삶의향기 동서문학상</option>
+                            <option value="http://academy.dongsuh.co.kr/">커피아카데미</option>
+                            <option value="https://www.dongsuh.com/main_kor/">(주)동서</option>
+                        </select>
+                    </div>
+                    <div class="select-wrap">
+                        <select name="community-site" id="community-site" onchange="if(this.value) window.open(this.value);">
+                            <option selected="selected" value="">커뮤니티</option>
+                            <option value="https://www.dongsuh.co.kr/06_member/login_pop.asp?strRtnUrl=/07_community/moon_main.asp&amp;strCafeId=1">동서문학회 커뮤니티</option>
+                            <option value="http://cafe.naver.com/coffeeinlife.cafe">그녀들의 커피이야기</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>
+            [부평공장] 인천시 부평구 새벌로 55 [서울사무소] 서울시 마포구 독막로 324 (도화동, 동서빌딩)<br>
+            대표번호 1588-2233 고객상담실 080-023-9114<br>
+            Copyright 2017 Dongsuh Foods Corporation. All rights reserved.
+        </p>
+    </div>
+
+</body>
+
+</html>
