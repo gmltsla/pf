@@ -160,11 +160,11 @@ body, html {
 /*.portfolio .inner ul li:first-child, .portfolio .inner ul li:nth-child(5) {margin-left:0;}*/
 .portfolio .inner .operation li:first-child .bg {background-image:url(images/logo_amway.png); }
 .portfolio .inner .operation li:last-child .bg {background-image:url(images/logo_player.png); }
-.portfolio .inner .build li:first-child .bg,
-.portfolio .inner .build li:nth-child(2) .bg {background-image:url(images/logo_lottecap.png); }
-.portfolio .inner .build li:nth-child(3) .bg {background-image:url(images/logo_sb.png); }
-.portfolio .inner .build li:nth-child(4) .bg {background-image:url(images/logo_kj.png); }
-.portfolio .inner .build li:nth-child(5) .bg {background-image:url(images/logo_top.png); }
+.portfolio .inner .build .hdc .bg{background-image:url(images/logo_hdc.png);}
+.portfolio .inner .build .lottecap .bg {background-image:url(images/logo_lottecap.png); }
+.portfolio .inner .build .fsb .bg {background-image:url(images/logo_sb.png); }
+.portfolio .inner .build .kongju .bg {background-image:url(images/logo_kj.png); }
+.portfolio .inner .build .topsurgery .bg {background-image:url(images/logo_top.png); }
 .portfolio .inner .renew li:first-child .bg {background-image:url(images/logo_dongsuh.png); }
 .portfolio .inner .renew li:nth-child(2) .bg {background-image:url(images/logo_bnx.png); }
 .portfolio .inner .renew li:nth-child(3) .bg {background-image:url(images/logo_belif.png); }
