@@ -1,0 +1,105 @@
+body {
+    font-family: "NanumBarunGothic", "나눔바른고딕", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+    min-width: 1147px;
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    src: url('font/NanumBarunGothic.eot');
+    src: url('font/NanumBarunGothic.eot') format('embedded-opentype'),
+        url('font/NanumBarunGothic.woff') format('woff');
+}
+
+
+#headerWrap {
+    width: 100%;
+    border-bottom:1px solid #E3E3E3;
+    /*background-color: #ccc;*/
+}
+
+.header {
+    overflow: hidden;
+    width: 1147px;
+    margin: 0 auto;
+    /*background-color: pink;*/
+}
+
+.header h1 {
+    margin-right: 119px;
+}
+
+.header .menuBar {
+    overflow: hidden;
+    float: left;
+    margin-top: 32px;
+}
+
+.header .menuBar > li {
+    float: left;
+    margin-left: 56px;
+}
+
+.header .menuBar li:first-child {
+    margin-left: 0;
+}
+
+.header .menuBar li a {
+    display: block;
+    font-size: 20px;
+    letter-spacing: -1.2px;
+}
+.header .menuBar li a:hover {color:red;}
+.header .utility {
+    overflow: hidden;
+    float: left;
+    margin-top: 18px;
+    margin-left: 73px;
+    border-left: 1px solid #E3E3E3;
+}
+
+.header .utility li {
+    float: left;
+}
+
+.header .utility a {
+    display:block;
+    font-size: 14px;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    margin-left: 36px;
+}
+
+.menuDetailWrap {overflow:hidden;position:absolute;top:72px;left:0;width:100%;padding:40px 385px 0 385px;}
+
+.menuDetailWrap .menuTit {float:left;width:460px;height:265px;font-size:44px;    border-right: 2px solid #e3e3e3;}
+.menuDetailWrap .menuTit p {letter-spacing:1.2px;line-height: 1.2;}
+
+.menuDetailWrap .menuList {float:left;width:424px;margin-top:7px;;margin-left:30px;}
+.menuDetailWrap .menuList li {margin-bottom:18px;}
+.menuDetailWrap .menuList li a{font-size:17px;}
+.menuDetailWrap .menuImg {float:left;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

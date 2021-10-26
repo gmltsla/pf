@@ -1,0 +1,210 @@
+body {
+    font-family: 'roboto_condensedregular', 'Nanum Barun Gothic', 'NanumSquare', "맑은 고딕", "Malgun Gothic", sans-serif;
+    font-size:15px;
+}
+
+@font-face {
+    font-family: 'roboto_condensedregular';
+    src: url(../font/'robotocondensed-regular-webfont.eot');
+    src: url(../font/'robotocondensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url(../font/'robotocondensed-regular-webfont.woff2') format('woff2'),
+         url(../font/'robotocondensed-regular-webfont.woff') format('woff'),
+         url(../font/'robotocondensed-regular-webfont.ttf') format('truetype'),
+         url(../font/'robotocondensed-regular-webfont.svg#roboto_condensedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Nanum Barun Gothic';
+    font-style: normal;
+    font-weight: 200;
+    src: url(../font/NanumBarunGothicUltraLight.eot);
+    src: local('Nanum Barun Gothic UltraLight'),
+        local('NanumBarunGothicUltraLight'),
+        url(../font/NanumBarunGothicUltraLight.eot?#iefix) format('embedded-opentype'),
+        url(../font/NanumBarunGothicUltraLight.woff2) format('woff2'),
+        url(../font/NanumBarunGothicUltraLight.woff) format('woff'),
+        url(../font/NanumBarunGothicUltraLight.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Nanum Barun Gothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../font/NanumBarunGothicLight.eot);
+    src: local('Nanum Barun Gothic Light'),
+        local('NanumBarunGothicLight'),
+        url(../font/NanumBarunGothicLight.eot?#iefix) format('embedded-opentype'),
+        url(../font/NanumBarunGothicLight.woff2) format('woff2'),
+        url(../font/NanumBarunGothicLight.woff) format('woff'),
+        url(../font/NanumBarunGothicLight.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Nanum Barun Gothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/NanumBarunGothic.eot);
+    src: local('Nanum Barun Gothic'),
+        local('NanumBarunGothic'),
+        url(../font/NanumBarunGothic.eot?#iefix) format('embedded-opentype'),
+        url(../font/NanumBarunGothic.woff2) format('woff2'),
+        url(../font/NanumBarunGothic.woff) format('woff'),
+        url(../font/NanumBarunGothic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Nanum Barun Gothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../font/NanumBarunGothicBold.eot);
+    src: local('Nanum Barun Gothic Bold'),
+        local('NanumBarunGothicBold'),
+        url(../font/NanumBarunGothicBold.eot?#iefix) format('embedded-opentype'),
+        url(../font/NanumBarunGothicBold.woff2) format('woff2'),
+        url(../font/NanumBarunGothicBold.woff) format('woff'),
+        url(../font/NanumBarunGothicBold.ttf) format('truetype');
+}
+
+
+@font-face {
+font-family: "NanumSquareLight";
+src: url(../font/NanumSquareL.eot);
+src: url(../font/NanumSquareL.eot?#iefix) format('embedded-opentype'),
+url(../font/NanumSquareL.woff) format('woff'),
+url(../font/NanumSquareL.ttf) format('truetype');
+}
+
+@font-face {
+font-family: "NanumSquare";
+src: url(../font/NanumSquareR.eot);
+src: url(../font/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+url(../font/NanumSquareR.woff2) format('woff2'),
+url(../font/NanumSquareR.woff) format('woff'),
+url(../font/NanumSquareR.ttf) format('truetype');
+}
+
+@font-face {
+font-family: "NanumSquareBold";
+src: url(../font/NanumSquareB.eot);
+src: url(../font/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+url(../font/NanumSquareB.woff2) format('woff2'),
+url(../font//NanumSquareB.woff) format('woff'),
+url(../font/NanumSquareB.ttf) format('truetype');
+}
+
+/* header */
+
+#header {position: relative;min-width:1903px;height:80px;background: #f6f6f6;}
+
+.headerInner {margin: 0 auto;width:1800px;height: 100%;}
+.headerInner h1 {width:80px;margin-top:20px;}
+.topMenu {margin-left:60px;}
+.topMenu > ul > li {}
+.topMenu > ul > li.selected > a {color:#1dade6;}
+.topMenu > ul > li.selected .twoDepth {overflow: visible; top:80px;width:100%;height: 80px;}
+.topMenu > ul > li > a {display:block; padding:30px 20px; font-size:18px;line-height: 18px; font-family: 'roboto_condensedregular';}
+.topMenu > ul > li .twoDepth {overflow: hidden;z-index: 10; width:100%; height:0;top:80px;left:0;bottom: -68px;background: #fff;}
+.topMenu > ul > li .twoDepth ul {margin-left: 200px;}
+.topMenu > ul > li .twoDepth ul li a {display: block; padding:15px;font-family: 'Nanum Barun Gothic'; font-size:15px;line-height:50px;}
+.topMenu > ul > li .twoDepth ul li a:hover {color:#1dade6;}
+
+
+
+
+.rightMenu {position: relative;margin-top: 15px;}
+.rightMenu > ul > li {}
+.rightMenu > ul > li.selected  > ul {display: block;z-index: 10;}
+.rightMenu > ul > li:first-child {margin-left:0;}
+.rightMenu > ul > li > a {display: block;width:21px;height:21px;padding: 15px;}
+.rightMenu > ul > li.login > a{background: url(img/btn_login.png) no-repeat center;}
+.rightMenu > ul > li.language > a{background: url(img/btn_language.png) no-repeat center;}
+.rightMenu > ul > li.search > a{background: url(img/btn_search.png) no-repeat center;}
+.rightMenu > ul > li.search > a.select { background:url(img/btn_close.png) no-repeat center;background-size:37%;  }
+/*
+.rightMenu > ul > li.search {position: relative;}
+.rightMenu > ul > li.search::before {content: "";display: none;position: absolute;left: 0;top: 0; width:21px;height:21px;padding: 15px;background:url(img/btn_close.png) no-repeat center;background-size:45%; }
+*/
+
+.rightMenu > ul > li > ul {display: none; position: absolute;top:50px;left:-22px;width:100px;padding:10px 0;background: #fff;border: 1px solid #ddd;}
+.rightMenu > ul > li:nth-child(2) ul {left:30px;}
+.rightMenu > ul > li > ul li a {display: block; padding:5px 0;font-size:12px;text-align: center;line-height: 12px;}
+.rightMenu > ul > li > ul li a:hover {color:#5f5f5f;}
+
+.rightMenu > ul > li:last-child .formBox {display: none; position: absolute;top:10px;right:45px;width:230px;height: 30px;background: #f6f6f6;border-bottom: 1px solid #000;}
+.rightMenu > ul > li:last-child .formBox .btn_search {display: block;width:25px;height:30px;background: url(img/btn_search.png) no-repeat center;}
+.rightMenu > ul > li:last-child .formBox form input {width:200px;height:25px;background: #f6f6f6;border: none;}
+.rightMenu > ul > li:last-child .formBox form input[type="text"] {font-size:12px;}
+.rightMenu > ul > li:last-child .formBox form input:focus {outline: none;}
+
+
+/* content */
+#content {min-width:1903px;}
+#content h2 {position: absolute;left:10px;bottom:10px;font-size:18px;font-weight:normal;z-index: 10;}
+.top .slide {width:45%;}
+.top .slide .carousel-1 .item {position: relative;width:100%;height:430px;background-size:cover;}
+.top .slide .carousel-1 .item a {display: block;width: inherit;    height: inherit;}
+.top .slide .carousel-1 .item p {position: absolute;top:140px;left:70px;font-size:38px;color:#fff;}
+.top .slide .carousel-1 .item p strong, .top .slide .carousel-1 .item p em {display: block;}
+.top .slide .carousel-1 .item p em {margin-top:15px;font-style: normal;font-size:20px;}
+.top .slide .carousel-1 .item p span {font-size: 14px;}
+.top .slide .carousel-1 .item:not(.first) p {color:#000;}
+
+.top .banner {width: 15%;height: auto;}
+.top .banner ul li {overflow: hidden;position: relative;width: 100%;height: 215px;}
+.top .banner ul li:first-child a {background: url(img/banner_brand.jpg) no-repeat;}
+.top .banner ul li:last-child a {background: url(img/banner_product.jpg) no-repeat;}
+.top .banner ul li a {display: block; height: 100%;background-size:cover !important;transition:all 0.3s ease-in-out; }
+.top .banner ul li a:hover {transform: scale(1.1);}
+
+.top .slide2 {position:relative;width: 40%;height:430px;}
+.top .slide2 .carousel-2 .item {width:100%;height:430px;background-repeat: no-repeat;background-position:center;}
+.top .slide2 h2 {bottom:10px;}
+.top .slide2 .owl-dots {position: absolute;top: 10px;right: 10px;}
+.top .slide2 .owl-theme .owl-nav.disabled+.owl-dots {margin-top:0;}
+.top .slide2 .carousel-2 .item a {display: none;}
+.top .slide2 .carousel-2 .item:hover a { display: block; padding-top:30%;width:100;height: 100%; background:#fff;font-size:20px;opacity:0.8;text-align: center; }
+
+.youtube {width: 30%;height:430px;background:url(img/img_youtube.jpg) no-repeat;background-size:cover;cursor:pointer;}
+.youtube .play-btn {width:80px;}
+.youtube > iframe {width:100%;height:100%;}
+
+.instagram {width: 30%;}
+.instagram div {overflow: hidden;}
+.instagram div a {display: block;width:100%;height: 215px;background:url(img/banner_instagram01.jpg) no-repeat;background-size:cover;  line-height: 0;transition: all 0.3s ease-in-out;}
+.instagram div a:hover {transform: scale(1.1);}
+.instagram ul li {position: relative;width: 33.333%;height:215px;}
+.instagram ul li a {display: block;color:#fff;width:100%;height:100%;}
+.instagram ul li a span {display: none;}
+.instagram ul li:first-child a {background:url(img/banner_instagram02.jpg) no-repeat;}
+.instagram ul li:nth-child(2) a {background:url(img/banner_instagram03.jpg) no-repeat;}
+.instagram ul li:last-child a {background:url(img/banner_instagram04.jpg) no-repeat;}
+.instagram ul li:hover a span {display: block; position: absolute;top: 0; width: 100%;height: 56%; padding-top: 50%;text-align: center;background:#000;opacity:0.8;}
+
+.bannerBox {width:40%;}
+.bannerBox ul li {overflow: hidden; position: relative;width:50%;height:215px;}
+.bannerBox ul li a {display: block;position: absolute;left: 0;top:0; width:100%;height:100%;background-position: center !important;transition: all 0.3s ease-in-out; }
+.bannerBox ul li a:hover {transform: scale(1.1);}
+.bannerBox ul li:first-child a {background:#ccc url(img/banner_stamp.png) no-repeat;}
+.bannerBox ul li:nth-child(2) a {background:#f5f2f2 url(img/banner_strore.png) no-repeat;}
+.bannerBox ul li:nth-child(3) a {background:url(img/banner_wonderland.png) no-repeat;}
+.bannerBox ul li:last-child a {background:#ffb2ae url(img/banner_event.jpg) no-repeat;}
+
+/* footer */
+#footer {background:#3e3c3c;padding:38px 0;}
+.footerInner {width:1800px;margin: 0 auto;}
+.footerInner .listBox {margin-left:60px;}
+.footerInner .listBox ul {margin-bottom: 7px;}
+.footerInner .listBox ul li a {display:block;padding:0 7px;}
+.footerInner .listBox li a, #footer p {color:#fff;font-size:12px;}
+.footerInner .listBox li {display: inline-block;}
+.footerInner .listBox li a {display:block;padding:0 7px;}
+.footerInner .listBox li:first-child a {padding-left:0;}
+.footerInner .listBox li:last-child a {color:#43baef;}
+.footerInner .cell-right li {display: inline-block;width:29px;height: 29px;margin-left:5px;}
+.footerInner .cell-right li a {display: block; width:100%;height: 100%;background-size:cover !important;}
+.footerInner .cell-right li:first-child a{background:url(img/btn_facebook.png) no-repeat;}
+.footerInner .cell-right li:nth-child(2) a{background:url(img/btn_instagram.png) no-repeat;}
+.footerInner .cell-right li:last-child a{background:url(img/btn_youtube.png) no-repeat;}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>belif</title>
+    <!-- 모바일에서 화면배율을 디바이스 크기 기준으로 설정 -->
+    <!-- 이게 안되면 pc에서의 100px과 모바일에서의 100px이 디바이스 성능에 따라 달라집니다. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="belif 브랜드 반응형 사이트입니다.">
+    <meta name="keywords" content="belif, 반응형, HTML5, CSS3">
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- 폰트어썸 불러오기 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- owl 캐러셀 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+
+    <!--    <link rel="shortcut icon" href="img/favicon.ico">-->
+    <link rel="stylesheet" href="../lib.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" type="text/javascript"></script>
+
+
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="headerInner row">
+                <h1 class="img-box cell"><img src="img/header_logo.png" alt="belif"></h1>
+                <nav class="topMenu cell">
+                    <ul class="row">
+                        <li class="cell"><a href="#a">BRAND</a>
+                            <div class="twoDepth absolute">
+                                <ul class="row">
+                                    <li class="cell"><a href="#a">빌리프 스토리</a></li>
+                                    <li class="cell"><a href="#a">공지사항</a></li>
+                                    <li class="cell"><a href="#a">홍보센터</a></li>
+                                    <li class="cell"><a href="#a">원더랜드</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="cell"><a href="#a">PRODUCT</a>
+                            <div class="twoDepth absolute">
+                                <ul class="row">
+                                    <li class="cell"><a href="#a">신제품</a></li>
+                                    <li class="cell"><a href="#a">스킨케어</a></li>
+                                    <li class="cell"><a href="#a">미백</a></li>
+                                    <li class="cell"><a href="#a">바디</a></li>
+                                    <li class="cell"><a href="#a">쿠션 | 비비 | 선블럭</a></li>
+                                    <li class="cell"><a href="#a">베이비</a></li>
+                                    <li class="cell"><a href="#a">맨올로지</a></li>
+                                    <li class="cell"><a href="#a">제품지도</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="cell"><a href="#a">WONDERLAND</a>
+                            <div class="twoDepth absolute">
+                                <ul class="row">
+                                    <li class="cell"><a href="#">Espionne</a></li>
+                                    <li class="cell"><a href="#">Movie</a></li>
+                                    <li class="cell"><a href="#">Game</a></li>
+                                    <li class="cell"><a href="#">Artwork</a></li>
+                                    <li class="cell"><a href="#">Paper block</a></li>
+                                    <li class="cell"><a href="#">Mini game</a></li>
+                                    <li class="cell"><a href="#">Chok Chok Art</a></li>
+                                    <li class="cell"><a href="#">Project Bomb</a></li>
+                                    <li class="cell"><a href="#">Cream Car</a></li>
+                                    <li class="cell"><a href="#">Talk Film</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="cell"><a href="#a">ONLINE STAMP</a></li>
+                        <li class="cell"><a href="#a">EVENT</a></li>
+                    </ul>
+                </nav>
+                <div class="rightMenu cell-right">
+                    <ul class="row">
+                        <li class="cell login"><a href="#a"><span class="hide">로그인</span></a>
+                            <ul>
+                                <li><a href="#">로그인</a></li>
+                                <li><a href="#">회원가입</a></li>
+                                <li><a href="#">마이페이지</a></li>
+                            </ul>
+                        </li>
+                        <li class="cell language"><a href="#a"><span class="hide">언어선택</span></a>
+                            <ul>
+                                <li><a href="#a">ENGLISH</a></li>
+                                <li><a href="#a">US ONLY</a></li>
+                                <li><a href="#a">CANADA</a></li>
+                                <li><a href="#a">CHINA</a></li>
+                                <li><a href="#a">JAPAN</a></li>
+                            </ul>
+                        </li>
+                        <li class="cell search"><a href="#a"><span class="hide">검색</span></a>
+                            <div class="formBox row">
+                                <form class="cell" action="">
+                                    <fieldset>
+                                        <legend>검색창</legend>
+                                        <input type="text" id="serch" placeholder="검색어를 입력해주세요"><label for="serch"></label>
+                                        <button type="button"></button>
+                                    </fieldset>
+                                </form>
+                                <a class="cell-right btn_search" href="#a"></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div id="content">
+            <section class="top row">
+                <div class="cell slide">
+                    <div class="carousel-1">
+                        <ul class="owl-carousel owl-theme">
+                            <li class="item first" style="background-image:url(img/banner_main_visual01.jpg);"><a href="#">
+                                <p><strong>안티에이징
+                                        <br>울트라 폭탄 크림 탄생!</strong><em>폭탄 크림의 촉촉함과 부드러움에<br>안티에이징 파워를더한 탄력폭탄 크림!</em><span>자세히보기 &gt;</span></p></a>
+                            </li>
+                            <li class="item" style="background-image:url(img/banner_main_visual02.jpg);"><a href="#">
+                                <p><strong>Jumbo’s<br>
+                                        moisture trip</strong><em>3가지 컬러의 시티 에디션으로 찾아온<br>100ml 보습 폭탄 크림 점보 탄생! </em><span>자세히보기 &gt;</span></p></a>
+                            </li>
+                            <li class="item" style="background-image:url(img/banner_main_visual03.jpg);"><a href="#">
+                                <p><strong>Knockdown<br>
+                                        Your Age!</strong><em>360˚ 탄력 밴딩 세럼이 피부 속<br>
+                                        탄력 그물망을 촘촘하게! </em><span>자세히보기 &gt;</span></p></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cell banner">
+                    <ul>
+                        <li>
+                            <h2>브랜드소개</h2><a href="#a"></a>
+                        </li>
+                        <li>
+                            <h2>제품소개</h2><a href="#a"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cell slide2">
+                    <div class="carousel-2">
+                        <ul class="owl-carousel owl-theme">
+                            <li class="item" style="background-image:url(img/img_bestseller01.jpg);"><a href="#a">더트루크림-모이스처라이징 밤</a></li>
+                            <li class="item" style="background-image:url(img/img_bestseller02.jpg);"><a href="#a">더트루크림-아쿠아밤</a></li>
+                            <li class="item" style="background-image:url(img/img_bestseller03.jpg);"><a href="#a">모이스춰라이징 밤 쿠션</a></li>
+                            <li class="item" style="background-image:url(img/img_bestseller04.jpg);"><a href="#a">클래식 에센스 인크리멘트</a></li>
+                            <li class="item" style="background-image:url(img/img_bestseller05.jpg);"><a href="#a">헝가리언 워터 에센스</a></li>
+                            <li class="item" style="background-image:url(img/img_bestseller06.jpg);"><a href="#a">디콕션 안티에이징 쉐이킹 워터</a></li>
+                            <li class="item" style="background-image:url(img/img_bestseller07.jpg);"><a href="#a">더트루팅쳐 오브 카모마일</a></li>
+                            <li class="item" style="background-image:url(img/img_bestseller08.jpg);"><a href="#a">뉴메로10 에센스</a></li>
+                            <li class="item" style="background-image:url(img/img_bestseller09.jpg);"><a href="#a">클래식크림 얼티미트</a></li>
+                        </ul>
+                        <h2>베스트셀러</h2>
+                    </div>
+                </div>
+            </section>
+            <section class="bottom row">
+                <div class="youtube relative cell">
+                    <iframe src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/3RL2-EXNPtM?&autoplay=1&rel=0"></iframe>
+                    <div class="play-btn img-box absolute-middle-center"><img src="img/btn_youtube_play.png" alt=""><span class="hide">[belif] 안티에이징 폭탄크림 탄생! TABLE편 (full ver.)</span></div>
+                </div>
+                <div class="instagram cell relative">
+                    <div class="img-box"><span class="hide">빌리프 일러스트레이션 강정구</span><a href="#a"></a></div>
+                    <ul class="row">
+                        <li class="cell"> <a href="#a"><span>#보습폭탄크림점보<br>#모이스춰라이징밤</span> </a></li>
+                        <li class="cell"> <a href="#a"><span>#빌리프이벤트<br>#규조토#발매트#뉴메로<br>#욕실파우치</span> </a></li>
+                        <li class="cell"> <a href="#a"><span>#빌리프new안티에이징세럼<br>#knockdownyourage</span></a></li>
+                    </ul>
+                </div>
+                <div class="bannerBox cell">
+                    <ul class="row">
+                        <li class="cell">
+                            <h2>온라인스탬프</h2><a href="#a"></a>
+                        </li>
+                        <li class="cell">
+                            <h2>스토어</h2><a href="#a"></a>
+                        </li>
+                        <li class="cell">
+                            <h2>원더랜드</h2><a href="#a"></a>
+                        </li>
+                        <li class="cell">
+                            <h2>이벤트</h2><a href="#a"></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <footer id="footer" class="row">
+           <div class="footerInner">
+            <div class="cell img-box"><img src="img/footer_logo.png" alt="belif"></div>
+            <div class="listBox cell">
+                <ul class="menu">
+                    <li><a href="#a">CONTACT US</a></li>
+                    <li><a href="#a">이용약관</a></li>
+                    <li><a href="#a">개인정보처리방침</a></li>
+                </ul>
+                <p>Copyright(c) LG Household&amp;Health Care Ltd. 2010 All right reserved</p>
+            </div>
+            <ul class="cell-right sns">
+                <li><a href="#a"></a></li>
+                <li><a href="#a"></a></li>
+                <li><a href="#a"></a></li>
+            </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

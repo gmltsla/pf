@@ -1,0 +1,557 @@
+/* coordi.html */
+
+#content {
+    position: relative;
+    padding: 20px 0 100px 0;
+}
+
+#content h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2rem;
+    margin: 30px 0;
+}
+
+.season_date {
+    position: absolute;
+    top: 70px;
+    right: 0;
+}
+
+.season_date ul li a {
+    padding: 5px 15px;
+    font-family: 'FuturaLight';
+    font-size: 0.75rem;
+    text-align: left;
+    background: #fff;
+    line-height: 1.3rem;
+}
+
+.season_date ul li {}
+
+.season_date ul li:first-child a {
+    padding: 5px 15px;
+    border-bottom: 1px solid #333;
+}
+
+.season_date ul li:first-child a:after {
+    padding-left: 14px;
+    font-family: "Font Awesome 5 Free";
+    content: "\f107";
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.season_date ul li:not(:first-child) {
+    display: none;
+}
+
+.coordi_list {
+    overflow: hidden;
+    margin-left: -1%;
+}
+
+.coordi_list li {
+    float: left;
+    width: 19%;
+    margin: 1% 0 0 1%;
+}
+
+.coordi_list li a img {
+    width: 100%;
+    vertical-align: top;
+}
+
+/* about.html */
+.about {
+    overflow: hidden;
+}
+
+.about .img-box {
+    float: left;
+    width: 500px;
+}
+
+.about .about_txt {
+    float: left;
+    width: 400px;
+    margin-left: 80px;
+    padding-top: 160px;
+    font-size: 0.75rem;
+}
+
+.about .about_txt dt {
+    margin-top: 30px;
+    font-size: 0.90rem;
+}
+
+.about .about_txt dd {
+    font-family: 'NanumGothic';
+    line-height: 20px;
+    margin-left: 0;
+    color: rgb(102, 102, 102);
+}
+
+/* concept.html */
+.about_txt h3 {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.about_txt.concept {
+    padding-top: 80px;
+}
+
+/* visual.html */
+.coordi_list.visual li {
+    width: 32.3333%;
+}
+
+/* magazine.html */
+.coordi_list.magazine {
+    margin-bottom: 100px;
+}
+
+.coordi_list.magazine li {
+    width: 24%;
+}
+
+/* b_magazine.html */
+.coordi_list.magazine.b_maga li a img {
+    box-sizing: border-box;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+/* news.html */
+.news_list {
+    overflow: hidden;
+    margin: -7% 0 0 -2%;
+}
+
+.news_list li {
+    float: left;
+    width: 48%;
+    margin: 7% 0 0 2%;
+}
+
+.news_list li dl {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.news_list li dl dt {
+    font-size: 1.2rem;
+}
+
+.news_list li dl dd {
+    margin: 5px 0 0 0;
+    font-size: 0.75rem;
+    color: rgb(102, 102, 102);
+    font-family: 'FuturaLight';
+}
+
+/* store.html */
+.store_wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 180px;
+    height: 60px;
+}
+
+.store_wrap .season_date.store,
+.store_wrap .season_date.store.last {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 7;
+    width: 80px;
+}
+
+.store_wrap .season_date.store.last {
+    margin-left: 100px;
+}
+
+.store_wrap .season_date.store ul li a {
+    font-family: 'Nanum Barun Gothic';
+}
+
+.store_list {
+    border-top: 1px solid rgb(215, 215, 215);
+}
+
+.store_list li {
+    border-bottom: 1px solid rgb(215, 215, 215);
+}
+
+.store_list li a {
+    position: relative;
+    padding: 15px;
+}
+
+.store_list li a:after {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    content: "";
+    font-family: "Font Awesome 5 Free";
+    content: "\f3c5";
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: right;
+}
+
+.store_list li a dl {
+    font-family: 'FuturaLight';
+    font-size: 0.75rem;
+    width: 90%;
+}
+
+.store_list li a dl dt {
+    font-weight: bold;
+}
+
+.store_list li a dl dd {
+    margin: 5px 0 0 0;
+}
+
+.store_list li .img-box {
+    display: none;
+}
+
+/* faq.html */
+.faq-menu-bar {
+    background-color: #b1b1b1;
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.faq-menu-bar + * {
+    margin-top: 100px;
+}
+
+.faq-menu-bar .menu-1 > ul > li {
+    width: calc(100% / 6);
+}
+
+.faq-menu-bar .menu-1 > ul > li.active {
+    background-color: black;
+}
+
+.faq-menu-bar .menu-1 > ul > li > a {
+    display: block;
+    padding: 12px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.faq-content-bar > div > ul > li {
+    display: none;
+}
+
+.faq-content-bar > div > ul > li.active {
+    display: block;
+}
+
+.faq-content-bar > div > ul > li > dl {
+    margin-top: 30px;
+    font-family: 'Nanum Barun Gothic';
+    font-size: 0.8rem;
+    color: #4c4c4c;
+}
+
+.faq-content-bar > div > ul > li > dl dt {
+    padding: 13px 0;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+}
+
+.faq-content-bar > div > ul > li > dl dt.on {
+    font-weight: bold;
+}
+
+.faq-content-bar > div > ul > li > dl dt span {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.faq-content-bar > div > ul > li > dl dd {
+    display: none;
+    padding: 20px 40px;
+    color: #5e5e5e;
+    border-bottom: 1px solid #333;
+    background: #f5f5f5;
+    line-height: 1.5;
+}
+
+/* login.html */
+.loginWrap {
+    /*    overflow: hidden;*/
+    max-width: 435px;
+    width: 100%;
+    margin: 160px auto;
+}
+
+.loginWrap ul {
+    float: left;
+    margin-right: 15px;
+}
+
+.loginWrap ul li:first-child {
+    margin-top: 0;
+}
+
+.loginWrap ul li {
+    margin-top: 5px;
+}
+
+.loginWrap ul li input {
+    width: 243px;
+    padding: 6px 0;
+    border: none;
+    border-bottom: 1px solid #000;
+    text-indent: 8px;
+}
+
+.loginWrap ul li input::placeholder {
+    color: #000;
+    font-family: 'FuturaLight';
+}
+
+.loginWrap .loginBtn {
+    float: left;
+    width: 151px;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    border: 1px solid #000;
+}
+
+.loginWrap .btnArea {
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.loginWrap .btnArea a {
+    display: block;
+    float: left;
+    width: 49%;
+    text-align: center;
+    padding: 10px 0;
+    margin-left: 2%;
+    font-family: 'FuturaLight';
+    font-size: 0.75rem;
+}
+
+.loginWrap .btnArea a:first-child {
+    margin-left: 0;
+    background: #000;
+    color: #fff;
+}
+
+.loginWrap .btnArea a:last-child {
+    background: #ccc;
+    color: #000;
+}
+
+
+@media screen and (max-width: 980px) {
+    #content {
+        padding: 20px;
+    }
+
+    /* coordi.html */
+    .coordi_list li {
+        width: 32.3333%;
+    }
+
+    .season_date {
+        right: 20px;
+    }
+
+    /* about.html */
+    .about .img-box {
+        float: none !important;
+        width: 100% !important;
+    }
+
+    .about .about_txt {
+        float: left !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+        padding-top: 20px !important;
+    }
+
+    .about .about_txt dt {
+        margin-top: 20px !important;
+        font-size: 0.90rem;
+    }
+
+    /* visual.html */
+    .coordi_list.visual li {
+        width: 49%;
+    }
+
+    /* magazine.html */
+    .coordi_list.magazine {
+        margin-bottom: 0;
+    }
+
+    /* b_magazine.html */
+    .coordi_list.magazine.b_maga li {
+        width: 31.3333%;
+    }
+
+    /*  faq.html  */
+
+    .faq-menu-bar.mobile {
+        padding-top: 44px;
+        margin: 0 10px;
+    }
+
+    .faq-menu-bar.mobile::after {
+        content: "-";
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        padding: 10px 0;
+        width: 40px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .faq-menu-bar.mobile.open::after {
+        content: "+";
+    }
+
+    .faq-menu-bar.mobile .menu-1 > ul > li.active {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 2px 0;
+    }
+
+    .faq-menu-bar.mobile .menu-1 > ul > li {
+        width: 100%;
+    }
+
+    .faq-menu-bar.mobile .menu-1 > ul > li:not(.active) {
+        display: none;
+    }
+
+    .faq-menu-bar.mobile.open .menu-1 > ul > li:not(.active) {
+        display: block;
+    }
+
+
+
+}
+
+@media screen and (max-width: 894px) {
+
+    /* magazine.html */
+    .coordi_list.visual li {
+        width: 31.3333%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    /* coordi.html */
+    #content {
+        padding: 10px;
+    }
+
+    #content h2 {
+        font-size: 1.5rem;
+    }
+
+    .season_date {
+        position: absolute;
+        top: 80px;
+        left: 10px;
+        width: 97%;
+    }
+
+    .season_date ul li:first-child a:after {
+        float: right;
+    }
+
+    .coordi_list {
+        margin-left: -2%;
+    }
+
+    .coordi_list li {
+        width: 48% !important;
+        margin: 2% 0 0 2%;
+    }
+
+    .coordi_list {
+        margin-top: 80px;
+    }
+
+    /* magazine.html */
+    . .coordi_list.visual li {
+        width: 48%;
+    }
+
+    /* b_magazine.html */
+    .coordi_list.magazine.b_maga li {
+        width: 48%;
+    }
+
+    /* news.html */
+    .news_list li {
+        width: 98%;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+    /* login.html */
+    .loginWrap {
+        /*    overflow: hidden;*/
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    .loginWrap ul {
+        float: none;
+        width: 100%;
+
+    }
+
+    .loginWrap ul li input {
+        width: 100%;
+
+    }
+
+    .loginWrap .loginBtn {
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .loginWrap .btnArea {
+        margin-top: 0;
+    }
+
+    .loginWrap .btnArea a {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+
+
+
+}
