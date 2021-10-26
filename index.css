@@ -197,8 +197,11 @@ body, html {
   .mainTxt strong {font-size: 80px;}
 .portfolio .inner {padding: 30px 2%;}
 .portfolio .inner ul li {width: 32%;}
+<<<<<<< HEAD
 .portfolio .inner ul li .bg {background-size: 50%;}
 
+=======
+>>>>>>> dd241512d49c1bc4c8d584da49e4e8a3b177b414
 }
 
 @media screen and (max-width: 1000px) {
@@ -220,5 +223,8 @@ body, html {
 @media screen and (max-width: 640px) {
   .mainTxt strong {font-size: 50px;line-height: 90px;}
   .portfolio .inner ul li {width: 49%;}
+<<<<<<< HEAD
 
+=======
+>>>>>>> dd241512d49c1bc4c8d584da49e4e8a3b177b414
 }
