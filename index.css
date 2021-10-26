@@ -197,8 +197,6 @@ body, html {
   .mainTxt strong {font-size: 80px;}
 .portfolio .inner {padding: 30px 2%;}
 .portfolio .inner ul li {width: 32%;}
-.portfolio .inner ul li .bg {background-size: 50%;}
-
 }
 
 @media screen and (max-width: 1000px) {
@@ -220,5 +218,4 @@ body, html {
 @media screen and (max-width: 640px) {
   .mainTxt strong {font-size: 50px;line-height: 90px;}
   .portfolio .inner ul li {width: 49%;}
-
 }
